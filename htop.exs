@@ -10,7 +10,7 @@ defmodule Htop do
   @impl true
   def license(), do: "GPL-2.0"
   @impl true
-  def type(), do: "bin"
+  def type(), do: :bin 
   @impl true
   def checksum(), do: ""
   @impl true
