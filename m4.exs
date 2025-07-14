@@ -20,9 +20,9 @@ defmodule M4 do
   
   @impl true
   def install(args) do
-    System.cmd("sh", ["configure", "--prefix=#{args.prefix}"], cd: args.cwd)
-    System.cmd("make", [], cd: args.cwd)
-    System.cmd("make", ["install"], cd: args.cwd)
+    System.cmd("sh", ["configure", "--prefix=#{args.prefix}"], cd: args.cwd, into: IO.stream())
+    System.cmd("make", [], cd: args.cwd, into: IO.stream())
+    System.cmd("make", ["install"], cd: args.cwd, into: IO.stream())
 
     :ok
   end
