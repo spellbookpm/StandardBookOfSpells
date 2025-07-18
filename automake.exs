@@ -4,6 +4,8 @@ defmodule Automake do
   @impl true
   def name(), do: "automake"
   @impl true
+  def description(), do: "Tool for generating GNU Standards-compliant Makefiles"
+  @impl true
   def version(), do: "1.18.1"
   @impl true
   def homepage(), do: "https://www.gnu.org/software/automake"

@@ -4,6 +4,8 @@ defmodule M4 do
   @impl true
   def name(), do: "m4"
   @impl true
+  def description(), do: "Macro processing language"
+  @impl true
   def version(), do: "1.4.20"
   @impl true
   def homepage(), do: "https://www.gnu.org/software/m4"

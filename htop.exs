@@ -4,6 +4,8 @@ defmodule Htop do
   @impl true
   def name(), do: "htop"
   @impl true
+  def description(), do: "Improved top (interactive process viewer)"
+  @impl true
   def version(), do: "3.4.1"
   @impl true
   def homepage(), do: "https://htop.dev"

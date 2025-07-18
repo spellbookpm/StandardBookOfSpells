@@ -4,6 +4,8 @@ defmodule M4 do
   @impl true
   def name(), do: "libtool"
   @impl true
+  def description(), do: "Generic library support script"
+  @impl true
   def version(), do: "2.5.4"
   @impl true
   def homepage(), do: "https://www.gnu.org/software/libtool"

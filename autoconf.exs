@@ -4,6 +4,8 @@ defmodule Autoconf do
   @impl true
   def name(), do: "autoconf"
   @impl true
+  def description(), do: "Automatic configure script builder"
+  @impl true
   def version(), do: "2.72"
   @impl true
   def homepage(), do: "https://www.gnu.org/software/autoconf"
