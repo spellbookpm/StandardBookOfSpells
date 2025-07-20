@@ -22,11 +22,13 @@ defmodule Htop do
   
   @impl true
   def install(args) do
-    System.cmd("sh", ["autogen.sh", "--prefix=#{args.prefix}"], cd: args.cwd, into: IO.stream())
-    System.cmd("sh", ["configure", "--prefix=#{args.prefix}"], cd: args.cwd, into: IO.stream())
-    System.cmd("make", [], cd: args.cwd, into: IO.stream())
-    System.cmd("make", ["install"], cd: args.cwd, into: IO.stream())
-
-    :ok
+    with {_, 0} <- System.cmd("sh", ["autogen.sh", "--prefix=#{args.prefix}"], cd: args.cwd, into: IO.stream()),
+         {_, 0} <- System.cmd("sh", ["configure", "--prefix=#{args.prefix}"], cd: args.cwd, into: IO.stream()),
+         {_, 0} <- System.cmd("make", [], cd: args.cwd, into: IO.stream()),
+         {_, 0} <- System.cmd("make", ["install"], cd: args.cwd, into: IO.stream()) do
+      :ok
+    else
+      {_, code} -> {:error, "Build step failed with code #{code}"}
+    end
   end
 end
