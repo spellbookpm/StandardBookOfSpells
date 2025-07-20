@@ -33,7 +33,7 @@ defmodule Wget do
       "configure",
       "--prefix=#{args.prefix}",
       "--disable-pcre",
-      "--disable--pcre2",
+      "--disable-pcre2",
       "--without-libpsl",
       "--without-included-regex"
     ]
