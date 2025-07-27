@@ -16,7 +16,13 @@ defmodule Htop do
   @impl true
   def checksum(), do: ""
   @impl true
-  def deps(), do: []
+  def deps(), do: [
+    "autoconf",
+    "automake",
+    "libtool",
+    "pkgconf",
+    "ncurses"
+  ]
   @impl true
   def source(), do: "https://github.com/htop-dev/htop/archive/refs/tags/3.4.1.tar.gz"
   
