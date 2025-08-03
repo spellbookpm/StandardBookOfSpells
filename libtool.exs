@@ -16,7 +16,7 @@ defmodule M4 do
   @impl true
   def checksum(), do: ""
   @impl true
-  def deps(), do: []
+  def deps(), do: ["m4"]
   @impl true
   def source(), do: "https://ftp.gnu.org/gnu/libtool/libtool-2.5.4.tar.xz"
   
