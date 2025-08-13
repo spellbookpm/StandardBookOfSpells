@@ -22,7 +22,7 @@ defmodule Ncurses do
     "libtool"
   ]
   @impl true
-  def source(), do: "https://ftp.gnu.org/gnu/ncurses/ncurses-6.5.tar.gz"
+  def source(), do: "https://ftpmirror.gnu.org/ncurses/ncurses-6.5.tar.gz"
   
   @impl true
   def install(args) do

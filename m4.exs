@@ -18,7 +18,7 @@ defmodule M4 do
   @impl true
   def deps(), do: []
   @impl true
-  def source(), do: "https://ftp.gnu.org/gnu/m4/m4-1.4.20.tar.xz"
+  def source(), do: "https://ftpmirror.gnu.org/m4/m4-1.4.20.tar.xz"
   
   @impl true
   def install(args) do
