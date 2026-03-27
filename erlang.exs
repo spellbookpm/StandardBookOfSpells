@@ -6,7 +6,7 @@ defmodule Erlang do
   @impl true
   def description(), do: "Programming language for highly scalable real-time systems"
   @impl true
-  def version(), do: "28.0.2"
+  def version(), do: "28.4.1"
   @impl true
   def homepage(), do: "https://www.erlang.org"
   @impl true
@@ -21,7 +21,7 @@ defmodule Erlang do
     "libtool"
   ]
   @impl true
-  def source(), do: "https://github.com/erlang/otp/releases/download/OTP-28.0.2/otp_src_28.0.2.tar.gz"
+  def source(), do: "https://github.com/erlang/otp/releases/download/OTP-28.4.1/otp_src_28.4.1.tar.gz"
 
   # Important, this does use perl from macos to build
   # right now, can probably get away without defining that here
